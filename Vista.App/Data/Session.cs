@@ -18,6 +18,6 @@ namespace Vista.App.Data
         [MaxLength(40)]
         public string? BookingReference { get; set; } //Allow nulls
 
-        //Placeholder for a navigation property to trainer (one side of one-to-many)
+        public Trainer? Trainer { get; set; }
     }
 }

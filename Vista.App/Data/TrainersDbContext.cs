@@ -32,7 +32,7 @@ namespace Vista.App.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite($"Data Source {DbPath}");
+            optionsBuilder.UseSqlite($"Data Source={DbPath}");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -89,13 +89,8 @@ namespace Vista.App.Data
             new Session { SessionId = 2, TrainerId = 1, SessionDate = new DateTime(2023, 1, 11) },
             new Session { SessionId = 3, TrainerId = 1, SessionDate = new DateTime(2023, 1, 12) },
             new Session { SessionId = 4, TrainerId = 1, SessionDate = new DateTime(2023, 1, 13) },
-            new Session
-            {
-                SessionId = 5,
-                TrainerId = 1,
-                SessionDate = new DateTime(2023, 1, 14),
-                BookingReference = "TST-99"
-            },
+            new Session { SessionId = 5, TrainerId = 1, SessionDate = new DateTime(2023, 1, 14), 
+                BookingReference = "TST-99" },
             new Session { SessionId = 6, TrainerId = 1, SessionDate = new DateTime(2023, 1, 17) },
             new Session { SessionId = 7, TrainerId = 1, SessionDate = new DateTime(2023, 1, 18) },
             new Session { SessionId = 8, TrainerId = 1, SessionDate = new DateTime(2023, 1, 19) },
@@ -106,18 +101,9 @@ namespace Vista.App.Data
             new Session { SessionId = 13, TrainerId = 2, SessionDate = new DateTime(2023, 1, 12) },
             new Session { SessionId = 14, TrainerId = 2, SessionDate = new DateTime(2023, 1, 13) },
             new Session { SessionId = 15, TrainerId = 2, SessionDate = new DateTime(2023, 1, 14) },
-            new Session
-            {
-                SessionId = 16,
-                TrainerId = 2,
-                SessionDate = new DateTime(2023, 1, 17),
-                BookingReference = "TST-98"
-            },
-            new Session
-            {
-                SessionId = 17,
-                TrainerId = 2,
-                SessionDate = new DateTime(2023, 1, 18),
+            new Session { SessionId = 16, TrainerId = 2, SessionDate = new DateTime(2023, 1, 17),
+                BookingReference = "TST-98" },
+            new Session { SessionId = 17, TrainerId = 2, SessionDate = new DateTime(2023, 1, 18),
                 BookingReference = "TST-97"
             },
             new Session { SessionId = 18, TrainerId = 2, SessionDate = new DateTime(2023, 1, 19) },
@@ -126,34 +112,19 @@ namespace Vista.App.Data
             new Session { SessionId = 21, TrainerId = 3, SessionDate = new DateTime(2023, 1, 10) },
             new Session { SessionId = 22, TrainerId = 3, SessionDate = new DateTime(2023, 1, 11) },
             new Session { SessionId = 23, TrainerId = 3, SessionDate = new DateTime(2023, 1, 12) },
-            new Session
-            {
-                SessionId = 24,
-                TrainerId = 3,
-                SessionDate = new DateTime(2023, 1, 13),
-                BookingReference = "TST-96"
-            },
+            new Session { SessionId = 24, TrainerId = 3, SessionDate = new DateTime(2023, 1, 13),
+                BookingReference = "TST-96" },
             new Session { SessionId = 25, TrainerId = 3, SessionDate = new DateTime(2023, 1, 14) },
             new Session { SessionId = 26, TrainerId = 3, SessionDate = new DateTime(2023, 1, 17) },
             new Session { SessionId = 27, TrainerId = 3, SessionDate = new DateTime(2023, 1, 18) },
             new Session { SessionId = 28, TrainerId = 3, SessionDate = new DateTime(2023, 1, 19) },
             new Session { SessionId = 29, TrainerId = 3, SessionDate = new DateTime(2023, 1, 20) },
-            new Session
-            {
-                SessionId = 30,
-                TrainerId = 3,
-                SessionDate = new DateTime(2023, 1, 21),
-                BookingReference = "TST-94"
-            },
+            new Session { SessionId = 30, TrainerId = 3, SessionDate = new DateTime(2023, 1, 21),
+                BookingReference = "TST-94" },
             new Session { SessionId = 31, TrainerId = 4, SessionDate = new DateTime(2023, 1, 11) },
             new Session { SessionId = 32, TrainerId = 4, SessionDate = new DateTime(2023, 1, 12) },
-            new Session
-            {
-                SessionId = 33,
-                TrainerId = 4,
-                SessionDate = new DateTime(2023, 1, 13),
-                BookingReference = "TST-95"
-            },
+            new Session { SessionId = 33, TrainerId = 4, SessionDate = new DateTime(2023, 1, 13),
+                BookingReference = "TST-95" },
             new Session { SessionId = 34, TrainerId = 4, SessionDate = new DateTime(2023, 1, 18) },
             new Session { SessionId = 35, TrainerId = 4, SessionDate = new DateTime(2023, 1, 19) },
             new Session { SessionId = 36, TrainerId = 4, SessionDate = new DateTime(2023, 1, 20) }
